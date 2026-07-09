@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "category": "Prozessmanagement",
+    "question": "Was ist Prozessmanagement?",
+    "answer": "Prozessmanagement ist ein systematischer Ansatz zur Steuerung und Optimierung von Arbeitsabläufen in unserer Einrichtung. Ziel ist es, Abläufe transparent, effizient und qualitativ hochwertig zu gestalten – zum Wohle der Menschen mit Beeinträchtigung, die wir begleiten. Bei der Lebenshilfe Braunschweig umfasst dies alle Kern-, Unterstützungs- und Führungsprozesse."
+  },
+  {
+    "id": 2,
+    "category": "Prozessmanagement",
+    "question": "Welche Prozessarten gibt es?",
+    "answer": "Wir unterscheiden drei Prozessarten: 1) Kernprozesse – unmittelbar wertschöpfend für unsere Kunden und Klienten (z.B. Pflege, Betreuung, Begleitung). 2) Unterstützungsprozesse – ermöglichen und unterstützen die Kernprozesse (z.B. Personalwirtschaft, IT, Facility Management). 3) Führungsprozesse – strategische Steuerung und Weiterentwicklung (z.B. Qualitätsmanagement, Strategieplanung, Führungskräfteentwicklung)."
+  },
+  {
+    "id": 3,
+    "category": "Prozessmanagement",
+    "question": "Wie dokumentieren wir Prozesse?",
+    "answer": "Prozesse werden in unserem Qualitätsmanagement-Handbuch dokumentiert. Jeder Prozess wird mit einer Prozesslandkarte visualisiert und in Prozesssteckbriefen beschrieben. Die Dokumentation erfolgt nach dem PDCA-Zyklus (Plan-Do-Check-Act). Alle Mitarbeitenden haben Zugriff auf die aktuellen Versionen über unser internes Netzwerk."
+  },
+  {
+    "id": 4,
+    "category": "Prozessmanagement",
+    "question": "Was ist eine Prozesslandkarte?",
+    "answer": "Eine Prozesslandkarte ist die grafische Darstellung aller Prozesse einer Organisation. Sie zeigt die Zusammenhänge zwischen Kern-, Unterstützungs- und Führungsprozessen auf. Bei der Lebenshilfe Braunschweig dient sie als Orientierungshilfe für alle Mitarbeitenden, um zu verstehen, wie die eigenen Tätigkeiten in das Gesamtsystem eingebunden sind."
+  },
+  {
+    "id": 5,
+    "category": "Qualitätsmanagement",
+    "question": "Was ist Qualitätsmanagement?",
+    "answer": "Qualitätsmanagement (QM) umfasst alle Maßnahmen zur Sicherung und Verbesserung der Qualität unserer Dienstleistungen. Bei der Lebenshilfe Braunschweig orientieren wir uns an der DIN EN ISO 9001 sowie an branchenspezifischen Standards für die Behindertenhilfe. Unser QM-System stellt sicher, dass wir die hohen Anforderungen an die Betreuung und Begleitung von Menschen mit Beeinträchtigung erfüllen."
+  },
+  {
+    "id": 6,
+    "category": "Qualitätsmanagement",
+    "question": "Welche QM-Standards gelten bei der Lebenshilfe?",
+    "answer": "Bei der Lebenshilfe Braunschweig arbeiten wir nach der DIN EN ISO 9001:2015. Ergänzend beachten wir die Anforderungen der WfbM-Verordnung und die Qualitätsindikatoren der Eingliederungshilfe nach SGB IX. Unser QM-System wird regelmäßig durch interne Audits und externe Zertifizierungen überprüft."
+  },
+  {
+    "id": 7,
+    "category": "Qualitätsmanagement",
+    "question": "Was ist ein internes Audit?",
+    "answer": "Ein internes Audit ist eine systematische, unabhängige Untersuchung unserer Prozesse und Abläufe. Es wird von geschulten internen Auditoren durchgeführt und dient der Überprüfung, ob unsere Prozesse wirksam sind und den Anforderungen entsprechen. Die Ergebnisse fließen in die kontinuierliche Verbesserung ein."
+  },
+  {
+    "id": 8,
+    "category": "Qualitätsmanagement",
+    "question": "Wie läuft ein Beschwerdemanagement ab?",
+    "answer": "Unser Beschwerdemanagement ist ein wichtiger Bestandteil des Qualitätsmanagements. Jede Beschwerde wird ernst genommen, systematisch erfasst und bearbeitet. Der Ablauf: 1) Annahme und Dokumentation, 2) Prüfung und Analyse, 3) Lösung und Rückmeldung, 4) Auswertung und Verbesserung. Beschwerden sehen wir als Chance zur Weiterentwicklung."
+  },
+  {
+    "id": 9,
+    "category": "Balanced Scorecard",
+    "question": "Was ist die Balanced Scorecard?",
+    "answer": "Die Balanced Scorecard (BSC) ist ein strategisches Managementinstrument, das die Vision und Strategie einer Organisation in konkrete Ziele und Kennzahlen übersetzt. Sie betrachtet vier Perspektiven: Finanzen, Kunden/Klienten, interne Prozesse sowie Lernen und Entwicklung. Bei der Lebenshilfe Braunschweig nutzen wir die BSC, um unsere strategischen Ziele zu verfolgen und zu messen."
+  },
+  {
+    "id": 10,
+    "category": "Balanced Scorecard",
+    "question": "Welche Perspektiven hat die Balanced Scorecard?",
+    "answer": "Die Balanced Scorecard umfasst vier Perspektiven: 1) Finanzperspektive – wirtschaftliche Tragfähigkeit und Ressourceneinsatz. 2) Klienten-/Kundenperspektive – Zufriedenheit und Lebensqualität der Menschen mit Beeinträchtigung. 3) Interne Prozessperspektive – Qualität und Effizienz unserer Abläufe. 4) Lern- und Entwicklungsperspektive – Mitarbeiterzufriedenheit, Qualifikation und Innovation."
+  },
+  {
+    "id": 11,
+    "category": "Balanced Scorecard",
+    "question": "Wie erstellen wir eine Balanced Scorecard?",
+    "answer": "Die Erstellung einer Balanced Scorecard erfolgt in mehreren Schritten: 1) Klärung der Vision und Strategie. 2) Ableitung strategischer Ziele für jede der vier Perspektiven. 3) Festlegung von Kennzahlen (KPIs) zur Messung der Zielerreichung. 4) Definition von konkreten Maßnahmen und Initiativen. 5) Regelmäßige Überprüfung und Anpassung. Wichtig ist die Einbindung aller Führungskräfte in den Prozess."
+  },
+  {
+    "id": 12,
+    "category": "Dokumentenmanagement",
+    "question": "Wo finde ich aktuelle QM-Dokumente?",
+    "answer": "Alle aktuellen QM-Dokumente finden Sie im internen Netzwerk unter \\\\lsserver\\qm-handbuch\\ oder direkt über das QM-Portal im Intranet. Bitte verwenden Sie stets die aktuellste Version. Die Dokumente sind nach Prozessen gegliedert und enthalten Verfahrensanweisungen, Arbeitsanleitungen und Formulare."
+  },
+  {
+    "id": 13,
+    "category": "Dokumentenmanagement",
+    "question": "Wie ist die Dokumentenlenkung geregelt?",
+    "answer": "Die Dokumentenlenkung stellt sicher, dass alle Mitarbeitenden mit gültigen Dokumenten arbeiten. Wichtige Regeln: 1) Nur freigegebene Dokumente verwenden. 2) Ausgedruckte Exemplare sind nicht immer aktuell – immer die digitale Version prüfen. 3) Änderungsanträge an die QM-Abteilung stellen. 4) Jedes Dokument hat eine eindeutige ID, ein Prüfdatum und eine Freigabe."
+  },
+  {
+    "id": 14,
+    "category": "Pflege",
+    "question": "Wie läuft der Pflegeprozess ab?",
+    "answer": "Der Pflegeprozess folgt einem strukturierten Ablauf: 1) Pflegeanamnese und Assessment – Erhebung des individuellen Unterstützungsbedarfs. 2) Pflegediagnose – Benennung der Ressourcen und Beeinträchtigungen. 3) Planung – Festlegung von Zielen und Maßnahmen gemeinsam mit dem Klienten. 4) Durchführung – Umsetzung der geplanten Maßnahmen. 5) Evaluation – Überprüfung der Wirksamkeit und Anpassung."
+  },
+  {
+    "id": 15,
+    "category": "Pflege",
+    "question": "Was ist bei der Pflege von Menschen mit Beeinträchtigung besonders zu beachten?",
+    "answer": "Bei der Pflege von Menschen mit Beeinträchtigung stehen der respektvolle Umgang und die Selbstbestimmung im Vordergrund. Wichtige Prinzipien: 1) Person-zentrierte Pflege – der Mensch mit seiner individuellen Lebensgeschichte steht im Mittelpunkt. 2) Soziale Teilhabe fördern. 3) Leichte Sprache und unterstützte Kommunikation nutzen. 4) Validation und Biografiearbeit. 5) Enge Zusammenarbeit mit Angehörigen und gesetzlichen Betreuern."
+  },
+  {
+    "id": 16,
+    "category": "Pflege",
+    "question": "Was ist der Unterschied zwischen Pflege und Betreuung?",
+    "answer": "Pflege umfasst vor allem medizinisch-behandlungspflegerische Maßnahmen (z.B. Medikamentengabe, Wundversorgung) und die Grundpflege (Körperpflege, Ernährung, Mobilität). Betreuung geht darüber hinaus und bezieht sich auf die Begleitung im Alltag, die Förderung von Selbstständigkeit, die Gestaltung sinnvoller Aktivitäten und die emotionale Unterstützung. Beides ist eng miteinander verbunden und wird bei der Lebenshilfe integriert betrachtet."
+  },
+  {
+    "id": 17,
+    "category": "Inklusion",
+    "question": "Was bedeutet Inklusion bei der Lebenshilfe?",
+    "answer": "Inklusion bedeutet für uns, dass jeder Mensch selbstbestimmt am gesellschaftlichen Leben teilhaben kann – unabhängig von Art und Schwere einer Beeinträchtigung. Wir setzen uns dafür ein, Barrieren abzubauen und inklusive Strukturen zu schaffen. Unser Leitbild 'Mittendrin. Nebenan.' drückt aus, dass Menschen mit Beeinträchtigung selbstverständlich dazugehören."
+  },
+  {
+    "id": 18,
+    "category": "Inklusion",
+    "question": "Wie fördern Sie die Selbstbestimmung der Klienten?",
+    "answer": "Selbstbestimmung wird bei uns durch verschiedene Ansätze gefördert: 1) Individuelle Unterstützungsplanung – der Klient entscheidet mit. 2) Wahlmöglichkeiten bei Tagesstruktur, Freizeit und Wohnform. 3) Förderung der Selbstvertretung und des persönlichen Budgets. 4) Beratung in Leichter Sprache. 5) Respekt vor den Wünschen und Entscheidungen jedes einzelnen Menschen."
+  },
+  {
+    "id": 19,
+    "category": "Dokumentenmanagement",
+    "question": "Wie beantrage ich eine Änderung an einem QM-Dokument?",
+    "answer": "Änderungsanträge stellen Sie bitte schriftlich an die QM-Abteilung. Verwenden Sie dafür das Formular 'Änderungsantrag QM-Dokument', das Sie im Intranet finden. Geben Sie an: Dokumententitel, aktuelle Version, gewünschte Änderung und Begründung. Die QM-Abteilung prüft den Antrag, stimmt ihn mit dem Prozessverantwortlichen ab und setzt die Änderung nach Freigabe um."
+  },
+  {
+    "id": 20,
+    "category": "Qualitätsmanagement",
+    "question": "Was ist der PDCA-Zyklus?",
+    "answer": "Der PDCA-Zyklus (Plan-Do-Check-Act) ist ein zentrales Werkzeug im Qualitätsmanagement. Plan: Ziele festlegen und Prozesse planen. Do: Prozesse umsetzen und durchführen. Check: Ergebnisse überwachen und messen. Act: Maßnahmen zur Verbesserung ableiten und umsetzen. Dieser Kreislauf wird kontinuierlich wiederholt und sorgt für stetige Verbesserung."
+  },
+  {
+    "id": 21,
+    "category": "Prozessmanagement",
+    "question": "Was sind KPIs im Prozessmanagement?",
+    "answer": "KPIs (Key Performance Indicators) sind messbare Kennzahlen, die den Erfolg von Prozessen abbilden. Beispiele bei der Lebenshilfe: Auslastung der Wohnangebote, Durchlaufzeiten bei Anträgen, Mitarbeiterzufriedenheit, Anzahl durchgeführter Schulungen, Beschwerdequote. KPIs helfen uns, Ziele zu überprüfen und Verbesserungspotenziale zu erkennen."
+  },
+  {
+    "id": 22,
+    "category": "Prozessmanagement",
+    "question": "Was ist eine Verfahrensanweisung?",
+    "answer": "Eine Verfahrensanweisung (VA) beschreibt detailliert, wie ein bestimmter Prozess oder eine Tätigkeit ausgeführt wird. Sie legt fest: Wer macht was, wann, wie und mit welchen Hilfsmitteln. Verfahrensanweisungen sind verbindlich und Teil unseres QM-Handbuchs. Sie stellen sicher, dass alle Mitarbeitenden nach einheitlichen Standards arbeiten."
+  },
+  {
+    "id": 23,
+    "category": "Balanced Scorecard",
+    "question": "Können Sie ein Beispiel für BSC-Kennzahlen nennen?",
+    "answer": "Aus der Klientenperspektive: Zufriedenheit der Klienten (gemessen durch Befragungen), Teilhabe an Gemeinschaftsaktivitäten. Aus der Prozessperspektive: Anzahl durchgeführter Audits, Einhaltung von Dokumentationsfristen. Aus der Mitarbeiterperspektive: Krankenstand, Teilnahme an Fortbildungen. Aus der Finanzperspektive: Kostendeckungsgrad der Angebote, Wirtschaftlichkeit."
+  },
+  {
+    "id": 24,
+    "category": "Qualitätsmanagement",
+    "question": "Wie oft finden QM-Zertifizierungen statt?",
+    "answer": "Die Zertifizierung nach DIN EN ISO 9001 erfolgt in einem dreijährigen Turnus. Im ersten Jahr findet ein Erstaudit statt, gefolgt von jährlichen Überwachungsaudits. Nach drei Jahren erfolgt ein Rezertifizierungsaudit. Ergänzend führen wir jährlich interne Audits durch, um die kontinuierliche Verbesserung sicherzustellen."
+  },
+  {
+    "id": 25,
+    "category": "Allgemein",
+    "question": "Wer ist für das Qualitätsmanagement zuständig?",
+    "answer": "Die QM-Beauftragte/der QM-Beauftragte koordiniert das Qualitätsmanagement. Jeder Prozess hat einen benannten Prozessverantwortlichen. Die Geschäftsführung trägt die Gesamtverantwortung und stellt die notwendigen Ressourcen bereit. Alle Mitarbeitenden sind aufgefordert, sich aktiv an der Qualitätsentwicklung zu beteiligen."
+  },
+  {
+    "id": 26,
+    "category": "Pflege",
+    "question": "Was ist Validation in der Pflege?",
+    "answer": "Validation ist eine wertschätzende Kommunikationsmethode für die Arbeit mit desorientierten, älteren Menschen (z.B. bei Demenz). Sie wurde von Naomi Feil entwickelt. Ziel ist es, die Gefühle und die innere Realität des Menschen anzuerkennen, statt zu korrigieren oder zu orientieren. In unserer Arbeit mit Menschen mit kognitiven Beeinträchtigungen nutzen wir validationstechnische Elemente, um eine vertrauensvolle Beziehung aufzubauen."
+  },
+  {
+    "id": 27,
+    "category": "Allgemein",
+    "question": "Was macht die Lebenshilfe Braunschweig?",
+    "answer": "Die Lebenshilfe Braunschweig begleitet Menschen mit Beeinträchtigung in allen Lebensbereichen. Wir bieten Wohnangebote, Werkstätten, Frühförderung, schulische Begleitung, offene Hilfen und Beratung. Unser Ziel ist Inklusion und Selbstbestimmung. Wir sind eine gemeinnützige GmbH und Teil der bundesweiten Lebenshilfe-Bewegung."
+  },
+  {
+    "id": 28,
+    "category": "Prozessmanagement",
+    "question": "Was ist der Unterschied zwischen Prozess und Projekt?",
+    "answer": "Ein Prozess ist ein wiederkehrender, standardisierter Ablauf (z.B. die tägliche Pflege, die monatliche Abrechnung). Ein Projekt ist einmalig, zeitlich befristet und hat ein definiertes Ziel (z.B. die Einführung eines neuen Dokumentationssystems). Prozesse werden kontinuierlich optimiert, Projekte haben einen klaren Anfang und ein Ende."
+  },
+  {
+    "id": 29,
+    "category": "Qualitätsmanagement",
+    "question": "Was ist eine Nichtkonformität?",
+    "answer": "Eine Nichtkonformität ist die Nichterfüllung einer Anforderung. Im QM-Kontext bedeutet das: Ein Prozess, ein Dokument oder eine Dienstleistung entspricht nicht den festgelegten Standards. Nichtkonformitäten werden im Audit-Bericht dokumentiert und müssen mit Korrekturmaßnahmen behoben werden. Die Ursachenanalyse hilft, Wiederholungen zu vermeiden."
+  },
+  {
+    "id": 30,
+    "category": "Inklusion",
+    "question": "Was ist Leichte Sprache?",
+    "answer": "Leichte Sprache ist eine besonders verständliche Sprachform für Menschen mit Lernschwierigkeiten oder geringen Deutschkenntnissen. Sie verwendet kurze Sätze, einfache Wörter, konkrete Beispiele und viele Bilder. Die Regeln werden vom Netzwerk Leichte Sprache festgelegt. Bei der Lebenshilfe setzen wir Leichte Sprache in der Kommunikation mit Klienten ein."
+  }
+]
