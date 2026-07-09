@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QM-Assistent – Lebenshilfe Braunschweig</title>
+  <meta name="description" content="Interner QM-Assistent für Prozessmanagement, Qualitätsmanagement und Balanced Scorecard bei der Lebenshilfe Braunschweig">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+
+  <!-- ===== TOAST ===== -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <div class="header-logo">
+        <svg viewBox="0 0 180 60" aria-label="Lebenshilfe Braunschweig Logo" role="img">
+          <rect x="0" y="8" width="44" height="44" rx="8" fill="#0B6BB4"/>
+          <text x="12" y="38" font-family="Arial" font-weight="bold" font-size="22" fill="white">LH</text>
+          <text x="52" y="30" font-family="'Lebenshilfe Sans Serif', Arial" font-weight="bold" font-size="18" fill="#002035">Lebenshilfe</text>
+          <text x="52" y="48" font-family="'Lebenshilfe Sans Serif', Arial" font-size="13" fill="#619FDE">Braunschweig</text>
+        </svg>
+        <span>QM-Assistent</span>
+      </div>
+      <nav class="header-nav" aria-label="Hauptnavigation">
+        <a href="#chat">Chatbot</a>
+        <a href="#prozesse">Prozesse</a>
+        <a href="#bsc">BSC</a>
+        <a href="#faq">FAQ</a>
+        <a href="#chat" class="btn-primary">Fragen stellen</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="Willkommen">
+    <div class="hero-inner">
+      <span class="hero-badge">🧭 Prozessmanagement & Qualität</span>
+      <h1>Ihr QM-Assistent für die Lebenshilfe Braunschweig</h1>
+      <p>Der intelligente Chatbot hilft Ihnen bei Fragen zu Prozessmanagement, Qualitätsmanagement, Balanced Scorecard und internen Dokumenten – schnell, direkt und datenschutzkonform auf Ihren Servern.</p>
+      <a href="#chat" class="btn btn-outline">Zum Chatbot ↓</a>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="section" aria-labelledby="features-title">
+    <div class="container">
+      <h2 id="features-title" class="section-title">Was der QM-Assistent für Sie tun kann</h2>
+      <p class="section-subtitle">Unterstützung für Ihren Arbeitsalltag – speziell für den Pflegebereich und die Arbeit mit Menschen mit Beeinträchtigung.</p>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true">💬</div>
+          <h4>Fragen beantworten</h4>
+          <p>Sofortige Antworten zu Prozessen, QM-Standards und internen Richtlinien – verständlich formuliert für den Pflegealltag.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true">📄</div>
+          <h4>Dokumente suchen</h4>
+          <p>Schneller Zugriff auf QM-Dokumente, Verfahrensanweisungen und Formulare aus dem internen Netzwerk.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true">📊</div>
+          <h4>Balanced Scorecard</h4>
+          <p>Strategische Ziele und Kennzahlen aus vier Perspektiven – immer im Blick für Führungskräfte und Teams.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true">🔄</div>
+          <h4>Prozesse visualisieren</h4>
+          <p>Prozesslandkarten, PDCA-Zyklus und Abläufe verständlich dargestellt für alle Mitarbeitenden.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHATBOT ===== -->
+  <section id="chat" class="section-alt chat-section" aria-labelledby="chat-title">
+    <div class="container">
+      <h2 id="chat-title" class="section-title">🤖 QM-Assistent Chatbot</h2>
+      <p class="section-subtitle">Stellen Sie Ihre Frage zum Prozess- und Qualitätsmanagement. Der Assistent durchsucht die interne Wissensdatenbank und gibt Ihnen fundierte Antworten.</p>
+      <div class="chat-container" role="application" aria-label="Chatbot">
+        <div class="chat-header">
+          <div class="chat-header-icon" aria-hidden="true">🤖</div>
+          <div class="chat-header-info">
+            <h3>QM-Assistent</h3>
+            <p>Lebenshilfe Braunschweig – <span id="chat-mode-indicator">🟡 Lokal (NLP)</span></p>
+          </div>
+        </div>
+        <div id="chat-messages" class="chat-messages" role="log" aria-live="polite" aria-label="Chatverlauf"></div>
+        <div id="chat-suggestions" class="chat-suggestions" aria-label="Vorschläge"></div>
+        <div class="chat-input-area">
+          <label for="chat-input" class="sr-only">Ihre Frage eingeben</label>
+          <input id="chat-input" type="text" placeholder="Stellen Sie Ihre Frage…" aria-label="Ihre Frage" autocomplete="off">
+          <button id="chat-send" aria-label="Nachricht senden" title="Senden">➤</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROZESSMANAGEMENT ===== -->
+  <section id="prozesse" class="section" aria-labelledby="prozesse-title">
+    <div class="container">
+      <h2 id="prozesse-title" class="section-title">📋 Prozessmanagement bei der Lebenshilfe</h2>
+      <p class="section-subtitle">Transparente, effiziente und qualitativ hochwertige Abläufe – für die bestmögliche Begleitung der Menschen mit Beeinträchtigung.</p>
+
+      <div class="card-grid" style="margin-bottom: 48px;">
+        <div class="card">
+          <div class="card-icon blue" aria-hidden="true">⚙️</div>
+          <h3>Kernprozesse</h3>
+          <p>Unmittelbar wertschöpfend für unsere Klienten: Pflege, Betreuung, Begleitung, Wohnangebote, Werkstätten, Frühförderung.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green" aria-hidden="true">🔧</div>
+          <h3>Unterstützungsprozesse</h3>
+          <p>Ermöglichen die Kernprozesse: Personalwirtschaft, IT, Facility Management, Verwaltung, Fortbildung.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon orange" aria-hidden="true">🎯</div>
+          <h3>Führungsprozesse</h3>
+          <p>Strategische Steuerung: Qualitätsmanagement, Strategieplanung, Führungskräfteentwicklung, Controlling.</p>
+        </div>
+      </div>
+
+      <!-- PDCA -->
+      <h3 style="text-align:center; margin-bottom: 32px;">PDCA-Zyklus – Kontinuierliche Verbesserung</h3>
+      <div class="process-pdca" role="img" aria-label="PDCA-Zyklus: Planen, Ausführen, Überprüfen, Handeln">
+        <div class="pdca-item plan">P<span class="sr-only">lan</span><small>Planen – Ziele festlegen</small></div>
+        <div class="pdca-item do">D<span class="sr-only">o</span><small>Ausführen – Prozesse umsetzen</small></div>
+        <div class="pdca-item check">C<span class="sr-only">heck</span><small>Überprüfen – Ergebnisse messen</small></div>
+        <div class="pdca-item act">A<span class="sr-only">ct</span><small>Handeln – Verbessern</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BALANCED SCORECARD ===== -->
+  <section id="bsc" class="section-alt" aria-labelledby="bsc-title">
+    <div class="container">
+      <h2 id="bsc-title" class="section-title">📊 Balanced Scorecard</h2>
+      <p class="section-subtitle">Unsere strategischen Ziele aus vier Perspektiven – für eine ganzheitliche Steuerung der Lebenshilfe Braunschweig.</p>
+
+      <div class="bsc-grid">
+        <div class="bsc-card finance">
+          <h4>💰 Finanzperspektive</h4>
+          <ul>
+            <li>Kostendeckungsgrad der Angebote</li>
+            <li>Wirtschaftlichkeit der Einrichtungen</li>
+            <li>Mittelfristige Finanzplanung</li>
+            <li>Fördermittelakquise</li>
+          </ul>
+        </div>
+        <div class="bsc-card client">
+          <h4>👥 Klientenperspektive</h4>
+          <ul>
+            <li>Zufriedenheit der Klienten</li>
+            <li>Lebensqualität und Teilhabe</li>
+            <li>Selbstbestimmungsgrad</li>
+            <li>Inklusion in der Gemeinde</li>
+          </ul>
+        </div>
+        <div class="bsc-card process">
+          <h4>🔁 Interne Prozessperspektive</h4>
+          <ul>
+            <li>Qualität der Pflege und Betreuung</li>
+            <li>Auditergebnisse</li>
+            <li>Dokumentationsqualität</li>
+            <li>Durchlaufzeiten bei Anträgen</li>
+          </ul>
+        </div>
+        <div class="bsc-card learning">
+          <h4>📚 Lern- & Entwicklungsperspektive</h4>
+          <ul>
+            <li>Mitarbeiterzufriedenheit</li>
+            <li>Fortbildungsquote</li>
+            <li>Krankenstand</li>
+            <li>Innovationsfähigkeit</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BSC Diagramm -->
+      <div style="margin-top: 40px;">
+        <div class="diagram-container" role="img" aria-label="Balanced Scorecard Diagramm mit den vier Perspektiven">
+          <svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" style="max-width:100%; height:auto;">
+            <defs>
+              <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f8faff"/>
+                <stop offset="100%" stop-color="#eef4fb"/>
+              </linearGradient>
+            </defs>
+            <rect width="700" height="400" rx="16" fill="url(#bgGrad)"/>
+
+            <!-- Center -->
+            <circle cx="350" cy="200" r="56" fill="#0B6BB4" opacity="0.08"/>
+            <text x="350" y="195" text-anchor="middle" font-family="'Lebenshilfe Sans Serif', Arial" font-weight="bold" font-size="15" fill="#0B6BB4">BSC</text>
+            <text x="350" y="215" text-anchor="middle" font-family="'Lebenshilfe Sans Serif', Arial" font-size="11" fill="#0B6BB4">Lebenshilfe</text>
+
+            <!-- Finance - Top -->
+            <rect x="270" y="30" width="160" height="70" rx="10" fill="#00A336" opacity="0.12"/>
+            <rect x="270" y="30" width="160" height="70" rx="10" fill="none" stroke="#00A336" stroke-width="1.5"/>
+            <text x="350" y="60" text-anchor="middle" font-family="'Lebenshilfe Sans Serif', Arial" font-weight="bold" font-size="13" fill="#00A336">💰 Finanzen</text>
+            <text x="350" y="80" text-anchor="middle" font-family="'Lebenshilfe Sans Serif', Arial" font-size="10" fill="#555">Wirtschaftlichkeit</text>
+            <line x1="350" y1="100" x2="350" y2="144" stroke="#00A336" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+
+            <!-- Client - Right -->
+            <rect x="510" y="165" width="160" height="70" rx="10" fill="#EB6600" opacity="0.12"/>
+            <rect x="510" y="165" width="160" height="70" rx="10" fill="none" stroke="#EB6600" stroke-width="1.5"/>
+            <text x="590" y="195" text-anchor="middle" font-family="'Lebenshilfe Sans Serif', Arial" font-weight="bold" font-size="13" fill="#EB6600">👥 Klienten</text>
+            <text x="590" y="215" text-anchor="middle" font-family="'Lebenshilfe Sans Serif', Arial" font-size="10" fill="#555">Zufriedenheit</text>
+            <line x1="510" y1="200" x2="406" y2="200" stroke="#EB6600" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+
+            <!-- Process - Bottom -->
+            <rect x="270" y="300" width="160" height="70" rx="10" fill="#0B6BB4" opacity="0.12"/>
+            <rect x="270" y="300" width="160" height="70" rx="10" fill="none" stroke="#0B6BB4" stroke-width="1.5"/>
+            <text x="350" y="330" text-anchor="middle" font-family="'Lebenshilfe Sans Serif', Arial" font-weight="bold" font-size="13" fill="#0B6BB4">🔁 Prozesse</text>
+            <text x="350" y="350" text-anchor="middle" font-family="'Lebenshilfe Sans Serif', Arial" font-size="10" fill="#555">Audits & Qualität</text>
+            <line x1="350" y1="300" x2="350" y2="256" stroke="#0B6BB4" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+
+            <!-- Learning - Left -->
+            <rect x="30" y="165" width="160" height="70" rx="10" fill="#B63E8C" opacity="0.12"/>
+            <rect x="30" y="165" width="160" height="70" rx="10" fill="none" stroke="#B63E8C" stroke-width="1.5"/>
+            <text x="110" y="195" text-anchor="middle" font-family="'Lebenshilfe Sans Serif', Arial" font-weight="bold" font-size="13" fill="#B63E8C">📚 Lernen</text>
+            <text x="110" y="215" text-anchor="middle" font-family="'Lebenshilfe Sans Serif', Arial" font-size="10" fill="#555">Fortbildung</text>
+            <line x1="190" y1="200" x2="294" y2="200" stroke="#B63E8C" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+
+            <!-- Arrows -->
+            <path d="M 350 170 Q 350 90 290 70" fill="none" stroke="#00A336" stroke-width="1.2" marker-end="url(#arrowGreen)" opacity="0.4"/>
+            <path d="M 404 185 Q 480 180 500 185" fill="none" stroke="#EB6600" stroke-width="1.2" opacity="0.4"/>
+            <path d="M 350 230 Q 350 310 290 330" fill="none" stroke="#0B6BB4" stroke-width="1.2" opacity="0.4"/>
+            <path d="M 296 185 Q 220 180 200 185" fill="none" stroke="#B63E8C" stroke-width="1.2" opacity="0.4"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="section-title">❓ Häufig gestellte Fragen</h2>
+      <p class="section-subtitle">Durchstöbern Sie die Wissensdatenbank zu Prozessmanagement, Qualitätsmanagement und mehr.</p>
+
+      <div class="category-filters" role="tablist" aria-label="Kategorien filtern">
+        <button class="active" data-category="Alle" role="tab">Alle</button>
+      </div>
+      <div class="faq-list" role="list"></div>
+    </div>
+  </section>
+
+  <!-- ===== ADMIN TOGGLE ===== -->
+  <div class="admin-toggle">
+    <button id="admin-open" aria-label="Admin-Panel öffnen" title="Admin-Panel">⚙️ Admin</button>
+  </div>
+
+  <!-- ===== ADMIN LOGIN MODAL ===== -->
+  <div id="admin-login-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="login-title">
+    <div class="modal login-form">
+      <button class="modal-close" id="admin-login-close" aria-label="Schließen">✕</button>
+      <h2 id="login-title">🔐 Admin-Zugang</h2>
+      <p>Bitte geben Sie das Admin-Passwort ein, um die Wissensdatenbank zu verwalten.</p>
+      <div class="form-group">
+        <label for="admin-password">Passwort</label>
+        <div class="password-input-wrapper">
+          <input type="password" id="admin-password" placeholder="Passwort eingeben" autocomplete="current-password">
+          <button type="button" class="password-toggle" id="toggle-password" aria-label="Passwort anzeigen/verbergen">👁️</button>
+        </div>
+        <div id="admin-login-error" class="error" role="alert"></div>
+      </div>
+      <div class="form-actions">
+        <button class="btn-cancel" id="admin-login-abort">Abbrechen</button>
+        <button class="btn-save" id="admin-login-btn">Anmelden</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ADMIN MODAL ===== -->
+  <div id="admin-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="admin-title">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Schließen">✕</button>
+
+      <div class="admin-header-bar">
+        <div>
+          <h2 id="admin-title">⚙️ Admin-Panel</h2>
+          <p>Verwalten Sie die Wissensdatenbank & konfigurieren Sie die KI.</p>
+        </div>
+        <button id="admin-logout-btn" class="btn-sm" style="background:#dc3545;color:white;border:none;border-radius:50px;padding:8px 20px;cursor:pointer;font-family:inherit;">Abmelden</button>
+      </div>
+
+      <!-- Tabs -->
+      <div style="display:flex;gap:0;margin-bottom:24px;border-bottom:2px solid #e0e4e8;">
+        <button class="admin-tab active" data-tab="kb" style="padding:10px 24px;border:none;background:none;cursor:pointer;font-family:inherit;font-weight:bold;font-size:0.95rem;color:var(--mid-gray);border-bottom:3px solid transparent;transition:all 0.3s;">📚 Wissensdatenbank</button>
+        <button class="admin-tab" data-tab="playground" style="padding:10px 24px;border:none;background:none;cursor:pointer;font-family:inherit;font-weight:bold;font-size:0.95rem;color:var(--mid-gray);border-bottom:3px solid transparent;transition:all 0.3s;">🧪 KI-Playground</button>
+      </div>
+
+      <!-- Tab: Wissensdatenbank -->
+      <div id="tab-kb" class="admin-tab-content active">
+        <!-- Form -->
+        <div id="admin-form-wrapper" style="margin-bottom: 32px; padding: 24px; background: #FAFBFD; border-radius: 20px;">
+          <h3 id="admin-form-title" style="font-size:1.1rem; margin-bottom:16px;">Neue Frage hinzufügen</h3>
+          <form id="admin-form">
+            <div class="form-group">
+              <label for="admin-category">Kategorie</label>
+              <select id="admin-category">
+                <option value="Allgemein">Allgemein</option>
+                <option value="Prozessmanagement">Prozessmanagement</option>
+                <option value="Qualitätsmanagement">Qualitätsmanagement</option>
+                <option value="Balanced Scorecard">Balanced Scorecard</option>
+                <option value="Dokumentenmanagement">Dokumentenmanagement</option>
+                <option value="Pflege">Pflege</option>
+                <option value="Inklusion">Inklusion</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="admin-question">Frage</label>
+              <input type="text" id="admin-question" placeholder="Geben Sie die Frage ein…" required>
+            </div>
+            <div class="form-group">
+              <label for="admin-answer">Antwort</label>
+              <textarea id="admin-answer" placeholder="Geben Sie die Antwort ein…" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn-cancel" id="admin-cancel">Abbrechen</button>
+              <button type="submit" class="btn-save">Speichern</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Toolbar -->
+        <div class="admin-toolbar">
+          <button class="add-btn" id="admin-add-btn">+ Neue Frage</button>
+          <button class="export-btn" id="admin-export-btn">📥 Exportieren (JSON)</button>
+          <button class="reset-btn" id="admin-reset-btn">🔄 Zurücksetzen</button>
+        </div>
+
+        <!-- Table -->
+        <div style="overflow-x:auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Kategorie</th>
+                <th>Frage</th>
+                <th>Antwort</th>
+                <th style="width:80px;">Aktionen</th>
+              </tr>
+            </thead>
+            <tbody id="admin-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab: KI-Playground -->
+      <div id="tab-playground" class="admin-tab-content" style="display:none;">
+        <div style="padding:24px;background:#FAFBFD;border-radius:20px;">
+          <h3 style="font-size:1.1rem;margin-bottom:4px;">🧪 KI-Playground</h3>
+          <p style="color:var(--mid-gray);font-size:0.9rem;margin-bottom:24px;">
+            Konfigurieren und testen Sie die Ollama-Anbindung. Das Backend muss laufen unter <code>python backend/main.py</code>.
+          </p>
+
+          <!-- Status -->
+          <div style="padding:16px;background:var(--white);border-radius:12px;margin-bottom:20px;border:1px solid var(--primary-bg);">
+            <strong>Status:</strong>
+            <span id="playground-status">Prüfe Verbindung...</span>
+          </div>
+
+          <!-- Mode -->
+          <div class="form-group">
+            <label>KI-Modus</label>
+            <div style="display:flex;gap:20px;padding:8px 0;">
+              <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+                <input type="radio" name="ai-mode" value="local" onchange="AppConfig.setMode('local');ChatbotUI.updateModeIndicator();">
+                🟡 Lokal (NLP) – kein Server nötig
+              </label>
+              <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+                <input type="radio" name="ai-mode" value="ollama" onchange="AppConfig.setMode('ollama');ChatbotUI.updateModeIndicator();">
+                🟢 KI (Ollama) – Backend nötig
+              </label>
+            </div>
+          </div>
+
+          <!-- Backend URL -->
+          <div class="form-group">
+            <label for="playground-url">Backend-URL</label>
+            <input type="url" id="playground-url" value="http://localhost:8000" placeholder="http://localhost:8000">
+          </div>
+
+          <!-- Model -->
+          <div class="form-group">
+            <label for="playground-model">Ollama-Modell</label>
+            <select id="playground-model-select" style="display:none;width:100%;padding:10px 16px;border:2px solid var(--primary-bg);border-radius:12px;font-size:0.95rem;font-family:inherit;">
+              <option value="">Modelle laden...</option>
+            </select>
+            <input type="text" id="playground-model" value="llama3.2:3b" placeholder="z.B. llama3.2:3b, mistral, tinyllama">
+          </div>
+
+          <!-- Actions -->
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;">
+            <button id="playground-test-btn" style="padding:10px 24px;background:var(--primary);color:var(--white);border:none;border-radius:50px;cursor:pointer;font-family:inherit;font-weight:bold;">🔄 Verbindung testen</button>
+            <button id="playground-save-btn" style="padding:10px 24px;background:var(--accent);color:var(--white);border:none;border-radius:50px;cursor:pointer;font-family:inherit;font-weight:bold;">💾 Speichern</button>
+          </div>
+          <div id="playground-test-result" style="margin-top:12px;font-size:0.9rem;"></div>
+
+          <!-- Info -->
+          <div style="margin-top:24px;padding:16px;background:#E8F5E9;border-radius:12px;font-size:0.85rem;line-height:1.6;">
+            <strong>💡 Setup-Hinweise:</strong><br>
+            <strong>1. Ollama installieren:</strong> <code>curl -fsSL https://ollama.com/install.sh | sh</code><br>
+            <strong>2. Modell laden:</strong> <code>ollama pull llama3.2:3b</code><br>
+            <strong>3. Backend starten:</strong> <code>source venv/bin/activate &amp;&amp; python backend/main.py</code><br>
+            <strong>Oder mit Docker:</strong> <code>docker compose -f backend/docker-compose.yml up</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <h4>Lebenshilfe Braunschweig</h4>
+        <p>Mittendrin. Nebenan.<br>Gemeinnützige GmbH</p>
+        <p style="margin-top:12px;">📍 Braunschweig, Deutschland</p>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <p>Telefon: 0531 / 88 00 00</p>
+        <p>E-Mail: info@lebenshilfe-braunschweig.de</p>
+        <p><a href="https://www.lebenshilfe-braunschweig.de" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7);">www.lebenshilfe-braunschweig.de</a></p>
+      </div>
+      <div>
+        <h4>Fachbereiche</h4>
+        <p>Wohnen & Begleitung</p>
+        <p>Werkstätten & Beschäftigung</p>
+        <p>Frühförderung & Bildung</p>
+        <p>Offene Hilfen & Beratung</p>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <p><a href="https://www.lebenshilfe-braunschweig.de/impressum/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7);">Impressum</a></p>
+        <p><a href="https://www.lebenshilfe-braunschweig.de/datenschutz/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7);">Datenschutz</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Lebenshilfe Braunschweig gGmbH. Diese Anwendung ist ein interner QM-Assistent – datenschutzkonform und on-premise betrieben.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/knowledge-base.js"></script>
+  <script src="js/ai-engine.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
